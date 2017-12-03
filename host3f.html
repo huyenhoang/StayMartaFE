@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hosting | The Rules</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="custom.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-transparent navbar-static-top">
+      <div class="top-header">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">StayMarta</a><img id="logo" src='logo.png'/>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <!-- <li class="active"><a href="#">Home</a></li> -->
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Save</a></li>
+            <li><a href="#">Save &amp; Exit</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+      
+      <div class="progress">
+          <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+              <span class="sr-only">75% Complete</span>
+          </div>
+      </div>
+      <div class="container">
+          <h3>Step 3 The Rules</h3>
+          <div class="row">
+              <div class="col-md-6">
+                  <div class="row">
+                      <h2>Set your base price</h2>
+                      <form>
+                          <label for="base-price">Base price</label><br>
+                          <span class="currencyinput">$<input class="price-select" type="number" min=0 name="base-price" placeholder="per night"></span>
+                          <p class="currency-suggested">Suggest Price: $175 | <button class="currency-btn">Set</button></p>
+                          <label for="currency">Currency</label><br>
+                          <select name="currency">
+                              <option value="USD" selected="selected">USD</option>
+                              <option value="EUR">Euro</option>
+                              <option value="GBP">United Kingdom Pounds</option>
+                              <option value="DZD">Algeria Dinars</option>
+                              <option value="ARP">Argentina Pesos</option>
+                              <option value="AUD">Australia Dollars</option>
+                              <option value="ATS">Austria Schillings</option>
+                              <option value="BSD">Bahamas Dollars</option>
+                              <option value="BBD">Barbados Dollars</option>
+                              <option value="BEF">Belgium Francs</option>
+                              <option value="BMD">Bermuda Dollars</option>
+                              <option value="BRR">Brazil Real</option>
+                              <option value="BGL">Bulgaria Lev</option>
+                              <option value="CAD">Canada Dollars</option>
+                              <option value="CLP">Chile Pesos</option>
+                              <option value="CNY">China Yuan Renmimbi</option>
+                              <option value="CYP">Cyprus Pounds</option>
+                              <option value="CSK">Czech Republic Koruna</option>
+                              <option value="DKK">Denmark Kroner</option>
+                              <option value="NLG">Dutch Guilders</option>
+                              <option value="XCD">Eastern Caribbean Dollars</option>
+                              <option value="EGP">Egypt Pounds</option>
+                              <option value="FJD">Fiji Dollars</option>
+                              <option value="FIM">Finland Markka</option>
+                              <option value="FRF">France Francs</option>
+                              <option value="DEM">Germany Deutsche Marks</option>
+                              <option value="XAU">Gold Ounces</option>
+                              <option value="GRD">Greece Drachmas</option>
+                              <option value="HKD">Hong Kong Dollars</option>
+                              <option value="HUF">Hungary Forint</option>
+                              <option value="ISK">Iceland Krona</option>
+                              <option value="INR">India Rupees</option>
+                              <option value="IDR">Indonesia Rupiah</option>
+                              <option value="IEP">Ireland Punt</option>
+                              <option value="ILS">Israel New Shekels</option>
+                              <option value="ITL">Italy Lira</option>
+                              <option value="JMD">Jamaica Dollars</option>
+                              <option value="JPY">Japan Yen</option>
+                              <option value="JOD">Jordan Dinar</option>
+                              <option value="KRW">Korea (South) Won</option>
+                              <option value="LBP">Lebanon Pounds</option>
+                              <option value="LUF">Luxembourg Francs</option>
+                              <option value="MYR">Malaysia Ringgit</option>
+                              <option value="MXP">Mexico Pesos</option>
+                              <option value="NLG">Netherlands Guilders</option>
+                              <option value="NZD">New Zealand Dollars</option>
+                              <option value="NOK">Norway Kroner</option>
+                              <option value="PKR">Pakistan Rupees</option>
+                              <option value="XPD">Palladium Ounces</option>
+                              <option value="PHP">Philippines Pesos</option>
+                              <option value="XPT">Platinum Ounces</option>
+                              <option value="PLZ">Poland Zloty</option>
+                              <option value="PTE">Portugal Escudo</option>
+                              <option value="ROL">Romania Leu</option>
+                              <option value="RUR">Russia Rubles</option>
+                              <option value="SAR">Saudi Arabia Riyal</option>
+                              <option value="XAG">Silver Ounces</option>
+                              <option value="SGD">Singapore Dollars</option>
+                              <option value="SKK">Slovakia Koruna</option>
+                              <option value="ZAR">South Africa Rand</option>
+                              <option value="KRW">South Korea Won</option>
+                              <option value="ESP">Spain Pesetas</option>
+                              <option value="XDR">Special Drawing Right (IMF)</option>
+                              <option value="SDD">Sudan Dinar</option>
+                              <option value="SEK">Sweden Krona</option>
+                              <option value="CHF">Switzerland Francs</option>
+                              <option value="TWD">Taiwan Dollars</option>
+                              <option value="THB">Thailand Baht</option>
+                              <option value="TTD">Trinidad and Tobago Dollars</option>
+                              <option value="TRL">Turkey Lira</option>
+                              <option value="VEB">Venezuela Bolivar</option>
+                              <option value="ZMK">Zambia Kwacha</option>
+                              <option value="EUR">Euro</option>
+                              <option value="XCD">Eastern Caribbean Dollars</option>
+                              <option value="XDR">Special Drawing Right (IMF)</option>
+                              <option value="XAG">Silver Ounces</option>
+                              <option value="XAU">Gold Ounces</option>
+                              <option value="XPD">Palladium Ounces</option>
+                              <option value="XPT">Platinum Ounces</option>
+                          </select>
+                      </form>
+                  </div>
+                  <br>
+                  </div>
+              </div>
+              <br>
+          <div class="row">
+          <a class="back-continue" href="host3e.html"><p><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Back</p></a>
+          <a href="host3g.html"><button class="host-btn-green btn back-continue">Continue</button></a>
+          </div>
+      </div>
+          <div class="container">
+              <hr>
+              <div id="footer-logo">
+                  <img id="logo" src='logo.png'/><p>StayMarta</p>
+              </div>
+          </div>
+
+  <!-- Footer -->
+  <footer class="container-fluid text-center">
+      <div class="footer-like-line">
+          <a href="#"><p class="footer-links">About</p></a>
+          <a href="#"><p class="footer-links">How It Works</p></a>
+          <a href="#"><p class="footer-links">Terms &amp; Privacy</p></a>
+          <a href="#"><p class="footer-links">Cancellation Policy</p></a>
+          <a href="#"><p class="footer-links">Blog</p></a>
+          <a href="#"><p class="footer-links">Contact</p></a>
+      </div>
+
+      <div class="footer-like-line">
+          <p class="icon-line" id="copyright">Copyright © 2017 Marta Inc. Made with love in USA &amp; Indonesia</p>
+          <a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="https://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="https://www.medium.com"><i class="fa fa-medium" aria-hidden="true"></i></a>
+          <a href="https://www.pinterest.com"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+      </div>
+  </footer>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
