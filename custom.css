@@ -793,3 +793,13 @@ h4, h5 {
 .policy {
     color: #03b5b5;
 }
+
+/* ----------------- Modal ------------------ */
+.modal-header {
+    background-color: #03B5B5;
+    color: #fff;
+}
+
+.close {
+    color: #fff;
+}
