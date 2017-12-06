@@ -715,12 +715,6 @@ h4, h5 {
     font-weight: bold;
 }
 
-.host-btn-green {
-    border-radius: 20px;
-    color: #fff;
-    background: #03b5b5;
-    margin: 5% 40%;
-}
 .progress-bar-green {
     background-color: #03b5b5;
 }
@@ -745,6 +739,21 @@ h4, h5 {
     margin: 10px;
     padding: 10px;
 }
+
+/* --------- Continue-back buttons ------ */
+.back-continue {
+    list-style: none;
+    display: inline-block;
+    width: 25%;
+    padding: 5px;
+}
+.host-btn-green {
+    border-radius: 20px;
+    color: #fff;
+    background: #03b5b5;
+    margin: 50px 40%;
+}
+
 /* --------- Photo upload hosting page ---- */
 .upload-button {
     margin-top: 100px;
