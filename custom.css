@@ -538,8 +538,34 @@ footer{background-color:#03B5B5; white-space: nowrap;}
 }
 
 .simlist{
-	margin: 0 5vw 0 5vw;
+    	clear: left;
 	padding: 0 50px;
+}
+
+.simlist h4{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.user_profile .namerating h3{
+    margin-top: 10px;
+}
+
+.simlist hr{
+    width: 90%;
+    margin-top: 5vw;
+    background-color: #939393;
+    border: 0 none;
+    color: #939393;
+    height: 1px;
+}
+
+.simlist .LPReviews{
+    margin-top: 20px;
+}
+
+.simlist .LPReviews h3{
+    font-size: 18px;
 }
 
 .simlist .container{
