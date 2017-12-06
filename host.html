@@ -1,142 +1,185 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>About Us</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="custom.css" rel="stylesheet">
-    <style type="text/css">
-      .jumbotron {
-          background: url('https://upload.wikimedia.org/wikipedia/commons/e/e0/Great_view.jpg');
-          background-size: cover;
-          background-repeat: no-repeat;
-      }
-    </style>
+    <head>
+        <meta charset="UTF-8">
+        <title>About Us</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="custom.css" rel="stylesheet">
+        <style type="text/css">
+            .jumbotron {
+                background: url('https://upload.wikimedia.org/wikipedia/commons/e/e0/Great_view.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        </style>
   </head>
   <body>
-    <div class="jumbotron">
-    <nav class="navbar navbar-transparent navbar-static-top">
-      <div class="top-header">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">StayMarta</a><img id="logo" src='logo.png'/>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <!-- <li class="active"><a href="#">Home</a></li> -->
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="host.html">Become a host</a></li>
-            <li><a href="#">Log in</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
-      <div class="container">
-          <div class="host-form">
-              <div class="host-intro">
-                  <h2>Earn money as a StayMarta host</h2>
-                  <p>Show your Christian hospitality and be rewarded in the process</p>
+      <!-- Jumbotron Start -->
+      <div class="jumbotron">
+          <!-- Nav start -->
+          <nav class="navbar navbar-transparent navbar-static-top">
+          <!-- Header Start-->
+          <div class="top-header">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">StayMarta</a><img id="logo" src='logo.png'/>
               </div>
-      <!-- POST form contents to /stories -->
+              <div id="navbar" class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav">
+                      <!-- <li class="active"><a href="#">Home</a></li> -->
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right">
+                      <li><a href="host.html">Become a host</a></li>
+                      <li><a href="#" data-toggle="modal" data-target="#LoginModal">Log in</a></li>
+                  </ul>
+                  <!-- Login Modal -->
+                  <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">StayMarta <img src=""></h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                                  </button>
+                              </div>
+                              <div class="modal-body">
+                                  <div class="login-opts">
+                                      <!-- Facebook Login -->
+                                      <div class="fb-login">
+                                          <button>
+                                              <i class="fa fa-facebook" aria-hidden="true"></i> Login with Facebook
+                                          </button>
+                                      </div>
+                                      <!-- Google Login -->
+                                      <div class="g-login">
+                                          <button><i class="fa fa-google" aria-hidden="true"></i> Login with Google
+                                          </button>
+                                      </div>
+                                  </div>
+                                  <!-- Manual Login -->
+                                  <hr><p>or</p><hr>
+                                  <div class="login-manual">
+                                      <input placeholder="Email"><br>
+                                      <input placeholder="Password"><br>
+                                      <input type="checkbox">Remember me
+                                      <p>Forgot password?</p>
+                                  </div>
+                                  <button>Log in</button>
+                                  <hr>
+                                  <!-- Sign-up -->
+                                  <p>Don't have an account? <span><button>Sign up</button></span></p>
+                              </div>
+                          </div>
+                      </div>
+                  </div> <!-- End Log-in modal -->
+              </div> <!--/.nav-collapse -->
+          </div> <!-- Header End-->
+          </nav> <!-- Nav End -->
+          
+          <!-- Cover Start -->
+          <div class="container">
+              <div class="host-form">
+                  <div class="host-intro">
+                      <h2>Earn money as a StayMarta host</h2>
+                      <p>Show your Christian hospitality and be rewarded in the process</p>
+                  </div>
+                  <!-- POST form contents to /stories -->
                   <a href="host1a.html"><button class="host-btn btn btn-lg">Begin hosting</button></a>
+              </div> 
+          </div> <!-- Cover End -->
+      </div> <!-- Jumbotron End-->
+      <!-- Main Content Start-->
+      <div class="container">
+          <h3 class="section-title">How it Works</h3>
+          <br>
+          <div class="row">
+              <h4>1 Sign up to host</h4>
+              <div class="host-step-l">
+                  <i class="fa-host fa fa-home fa-stack-2x" aria-hidden="true"></i>
+                  <br>
+                  <br>
+                  <h5>Listing Information</h5>
+                  <p>You will fill out general information about your listing, provide a description, upload photos, set house rules, and pick a price.</p>
+              </div>
+              <div class="host-step-r">
+                  <i class="fa-host fa fa-users fa-stack-2x" aria-hidden="true"></i>
+                  <br>
+                  <br>
+                  <h5>Who can book a listing?</h5>
+                  <p>You will set availability and house rules for your listing. Only confirmed guests will be able to see your exact location.</p> 
+              </div>
           </div>
-      </div>
-    </div>
-    
-    <div class="container">
-        <h3 class="section-title">How it Works</h3>
-        <br>
-        <div class="row">
-            <h4>1 Sign up to host</h4>
-            <div class="host-step-l">
-                <i class="fa-host fa fa-home fa-stack-2x" aria-hidden="true"></i>
-                <br>
-                <br>
-                <h5>Listing Information</h5>
-                <p>You will fill out general information about your listing, provide a description, upload photos, set house rules, and pick a price.</p>
-            </div>
-            <div class="host-step-r">
-                <i class="fa-host fa fa-users fa-stack-2x" aria-hidden="true"></i>
-                <br>
-                <br>
-                <h5>Who can book a listing?</h5>
-                <p>You will set availability and house rules for your listing. Only confirmed guests will be able to see your exact location.</p> 
-            </div>
-        </div>
-        <div class="row"> 
-            <h4>2 Guests search for your listing and book</h4>
-            <div class="host-step-l">
-                <i class="fa-host fa fa-envelope-o fa-stack-2x" aria-hidden="true"></i>
-                <br>
-                <br>
-                <h5>Booking notification</h5>
-                <p>When a guest books your listings you will be notified by email. Potential guests can also email with questions regarding the listing.</p>
-            </div>
-            <div class="host-step-r">
-                <i class="fa-host fa fa-credit-card fa-stack-2x" aria-hidden="true"></i>
-                <br>
-                <br>
-                <h5>How to guests pay?</h5>
-                <p>Guests are required to pay by credit card upon booking. Refunds vary according to <a href="#">StayMarta's Cancellation Policy.</a></p>
-            </div>
-        </div>  
-        <div class="row"> 
-            <h4>3 Welcome your new guests</h4>
-            <div class="host-step-l">
-                <i class="fa-host fa fa-list fa-stack-2x" aria-hidden="true"></i>
-                <br>
-                <br>
-                <h5>Plan for your quests</h5>
-                <p>Coordinate with your guest regarding logistics such as key swapping, parking, and alarms.</p>
-            </div>
-            <div class="host-step-r">
-                <i class="fa-host fa fa-money fa-stack-2x" aria-hidden="true"></i>
-                <br>
-                <br>
-                <h5>How do hosts get paid?</h5>
-                <p>You will be paid once the guest checks-in. Guests pay a 10% service fee and StayMarta takes 3% of the total transaction.</p>
-            </div>
-        </div>
-        <div class="row">
-           <a href="host1a.html"><button class="host-btn-green btn ">Begin hosting</button></a>
-        </div>     
+          <div class="row"> 
+              <h4>2 Guests search for your listing and book</h4>
+              <div class="host-step-l">
+                  <i class="fa-host fa fa-envelope-o fa-stack-2x" aria-hidden="true"></i>
+                  <br>
+                  <br>
+                  <h5>Booking notification</h5>
+                  <p>When a guest books your listings you will be notified by email. Potential guests can also email with questions regarding the listing.</p>
+              </div>
+              <div class="host-step-r">
+                  <i class="fa-host fa fa-credit-card fa-stack-2x" aria-hidden="true"></i>
+                  <br>
+                  <br>
+                  <h5>How to guests pay?</h5>
+                  <p>Guests are required to pay by credit card upon booking. Refunds vary according to <a href="#">StayMarta's Cancellation Policy.</a></p>
+              </div>
+          </div>  
+          <div class="row"> 
+              <h4>3 Welcome your new guests</h4>
+              <div class="host-step-l">
+                  <i class="fa-host fa fa-list fa-stack-2x" aria-hidden="true"></i>
+                  <br>
+                  <br>
+                  <h5>Plan for your quests</h5>
+                  <p>Coordinate with your guest regarding logistics such as key swapping, parking, and alarms.</p>
+              </div>
+              <div class="host-step-r">
+                  <i class="fa-host fa fa-money fa-stack-2x" aria-hidden="true"></i>
+                  <br>
+                  <br>
+                  <h5>How do hosts get paid?</h5>
+                  <p>You will be paid once the guest checks-in. Guests pay a 10% service fee and StayMarta takes 3% of the total transaction.</p>
+              </div>
+          </div>
+          <div class="row">
+              <a href="host1a.html"><button class="host-btn-green btn ">Begin hosting</button></a>
+          </div>      
       </div>   
       
-  <div class="container">
-      <hr>
-      <div id="footer-logo">
-          <img id="logo" src='logo.png'/><p>StayMarta</p>
+      <!-- Footer Logo -->
+      <div class="container">
+          <hr>
+          <div id="footer-logo">
+              <img id="logo" src='logo.png'/><p>StayMarta</p>
+          </div>
       </div>
-  </div>
-
-  <!-- Footer -->
-  <footer class="container-fluid text-center">
-      <div class="footer-like-line">
-          <a href="#"><p class="footer-links">About</p></a>
-          <a href="#"><p class="footer-links">How It Works</p></a>
-          <a href="#"><p class="footer-links">Terms &amp; Privacy</p></a>
-          <a href="#"><p class="footer-links">Cancellation Policy</p></a>
-          <a href="#"><p class="footer-links">Blog</p></a>
-          <a href="#"><p class="footer-links">Contact</p></a>
-      </div>
-
-      <div class="footer-like-line">
-          <p class="icon-line" id="copyright">Copyright © 2017 Marta Inc. Made with love in USA &amp; Indonesia</p>
-          <a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-          <a href="https://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-          <a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-          <a href="https://www.medium.com"><i class="fa fa-medium" aria-hidden="true"></i></a>
-          <a href="https://www.pinterest.com"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
-      </div>
-  </footer>
-    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-  </body>
+      <!-- Footer -->
+      <footer class="container-fluid text-center">
+          <div class="footer-like-line">
+              <a href="#"><p class="footer-links">About</p></a>
+              <a href="#"><p class="footer-links">How It Works</p></a>
+              <a href="#"><p class="footer-links">Terms &amp; Privacy</p></a>
+              <a href="#"><p class="footer-links">Cancellation Policy</p></a>
+              <a href="#"><p class="footer-links">Blog</p></a>
+              <a href="#"><p class="footer-links">Contact</p></a>
+          </div>
+          <div class="footer-like-line">
+              <p class="icon-line" id="copyright">Copyright © 2017 Marta Inc. Made with love in USA &amp; Indonesia</p>
+              <a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="https://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              <a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a href="https://www.medium.com"><i class="fa fa-medium" aria-hidden="true"></i></a>
+              <a href="https://www.pinterest.com"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+          </div>
+      </footer>
+      <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    </body>
 </html>
