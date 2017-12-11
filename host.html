@@ -42,8 +42,8 @@
                   <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                       <div class="modal-dialog" role="document">
                           <div class="modal-content">
-                              <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalLabel">StayMarta <img src=""></h5>
+                              <div class="login-modal-header">
+                                  <h2 class="login-modal-title" id="exampleModalLabel">Log in <img src=""></h2>
                                   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
                                   </button>
                               </div>
@@ -51,28 +51,27 @@
                                   <div class="login-opts">
                                       <!-- Facebook Login -->
                                       <div class="fb-login">
-                                          <button>
-                                              <i class="fa fa-facebook" aria-hidden="true"></i> Login with Facebook
+                                          <button id="fb-login-btn">
+                                              <i class="fa fa-facebook" aria-hidden="true"></i><p id="fb-login-text"> Login with Facebook</p>
                                           </button>
                                       </div>
                                       <!-- Google Login -->
                                       <div class="g-login">
-                                          <button><i class="fa fa-google" aria-hidden="true"></i> Login with Google
+                                          <button id="g-login-btn"> <span><img id="g-icon" src="img/google-g.png"></span><p id="g-login-text"> Login with Google </p>
                                           </button>
                                       </div>
                                   </div>
+                                  <p id="option-text">or</p>
                                   <!-- Manual Login -->
-                                  <hr><p>or</p><hr>
                                   <div class="login-manual">
-                                      <input placeholder="Email"><br>
-                                      <input placeholder="Password"><br>
-                                      <input type="checkbox">Remember me
-                                      <p>Forgot password?</p>
+                                      <input id="login-email" placeholder="Email"><br>
+                                      <input id="login-pw" placeholder="Password"><br>
+                                      <input id="login-remember-me" type="checkbox">  <p id="login-remember-me">Remember me</p>
+                                      <p id="login-pw-forgot">Forgot password?</p>
                                   </div>
-                                  <button>Log in</button>
-                                  <hr>
+                                  <button id="login-btn">Log in</button>
                                   <!-- Sign-up -->
-                                  <p>Don't have an account? <span><button>Sign up</button></span></p>
+                                  <p id="sign-up-text">Don't have an account? <span><button id="sign-up-btn">Sign up</button></span></p>
                               </div>
                           </div>
                       </div>
