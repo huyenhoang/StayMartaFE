@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="custom.css" rel="stylesheet">
+    <style type="text/css">
+      .jumbotron {
+          background: url('https://i.ytimg.com/vi/Cahf_vGqueM/maxresdefault.jpg');
+          background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="jumbotron">
+      <nav class="navbar navbar-transparent navbar-static-top">
+        <div class="top-header">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">StayMarta</a><img id="logo" src='logo.png'/>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <!-- <li class="active"><a href="#">Home</a></li> -->
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="host.html">Become a host</a></li>
+              <li><a href="#">Log in</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+      <div class="container_tc">
+        <h1><strong>Contact Us</strong></h1>
+        <h3>We are here to help!</h3>
+      </div>
+    </div>
+
+    <div class="contact_info">
+      <h5>Contact Us Today</h5>
+      <p>StayMarta is happy to provide you with more information and answer any questions you may have.</p>      
+      <div class="contact_container">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+          <label for="email">Email</label>
+          <input type="email" name="email" placeholder="example@domain.com">
+
+          <label for="subject">Message</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+      <div class="addressphone">
+        <h5>General Contact</h5>
+        <h5>Phone: 123-345-5678</h5>
+        <h5>Email: whatever@staymarta.com</h5>
+      </div>
+    </div>
+
+    <div class="container">
+        <hr>
+        <div id="footer-logo">
+            <img id="logo" src='logo.png'/><p>StayMarta</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid text-center">
+        <div class="footer-like-line">
+            <a href="aboutus.html"><p class="footer-links">About</p></a>
+            <a href="host.html"><p class="footer-links">How It Works</p></a>
+            <a href="term&conds.html"><p class="footer-links">Terms &amp; Privacy</p></a>
+            <a href="cancellations.html"><p class="footer-links">Cancellation Policy</p></a>
+            <a href="bloghome.html"><p class="footer-links">Blog</p></a>
+            <a href="#"><p class="footer-links">Contact</p></a>
+        </div>
+
+        <div class="footer-like-line">
+            <p class="icon-line" id="copyright">Copyright © 2017 Marta Inc. Made with love in USA &amp; Indonesia</p>
+            <a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.medium.com"><i class="fa fa-medium" aria-hidden="true"></i></a>
+            <a href="https://www.pinterest.com"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
